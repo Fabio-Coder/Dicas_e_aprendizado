@@ -1,0 +1,37 @@
+CORRIGINDO COMMITS
+
+Suponha que tenha escrito um commit com a mensagem errada, use o comando "git commit -m "nova mensagem" --amend"
+
+Ex
+
+pi@raspberrypi:~ $ mkdir projects
+pi@raspberrypi:~ $ cd projects/
+pi@raspberrypi:~/projects $ git clone https://github.com/Fabio-Coder/Dicas_e_aprendizado.git
+Cloning into 'Dicas_e_aprendizado'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+pi@raspberrypi:~/projects $ ls
+Dicas_e_aprendizado
+pi@raspberrypi:~/projects $ cd Dicas_e_aprendizado/
+pi@raspberrypi:~/projects/Dicas_e_aprendizado $ ls
+LICENSE  README.md
+pi@raspberrypi:~/projects/Dicas_e_aprendizado $ echo "Hello World!" > texto.txt
+pi@raspberrypi:~/projects/Dicas_e_aprendizado $ git add .
+pi@raspberrypi:~/projects/Dicas_e_aprendizado $ git commit -m "Primeiro commito"
+[main a07c1f2] Primeiro commito
+ 1 file changed, 1 insertion(+)
+ create mode 100644 texto.txt
+pi@raspberrypi:~/projects/Dicas_e_aprendizado $ git commit -m "Primeiro commit" --amend
+[main b88f69e] Primeiro commit
+ Date: Fri Apr 23 16:58:46 2021 -0300
+ 1 file changed, 1 insertion(+)
+ create mode 100644 texto.txt
+pi@raspberrypi:~/projects/Dicas_e_aprendizado $ git commit -m "Primeiro commit" --amend
+[main b88f69e] Primeiro commit
+ Date: Fri Apr 23 16:58:46 2021 -0300
+ 1 file changed, 1 insertion(+)
+ create mode 100644 texto.txt
+pi@raspberrypi:~/projects/Dicas_e_aprendizado $ 
